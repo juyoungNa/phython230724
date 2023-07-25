@@ -15,3 +15,24 @@ def union(*ar):
 print( union("HAM", "SPAM") )
 print( union("HAM", "SPAM", "EGG") )
 
+#람다 함수
+g = lambda x,y:x*y
+print( g(3,4) )
+print( g(5,6) )
+print( (lambda x:x*x)(4) )
+print( globals() )
+
+#내장함수 필터
+#필터링 함수 정의
+def getBiggerThan20(i):
+    return i>20
+
+lst = [10, 25, 30]
+iterL = filter(getBiggerThan20, lst)
+for i in iterL:
+    print("20보다 클 때 출력값 : {0}".format(i))
+
+print("---람다함수---")
+iterL = filter(lambda x:x>25, lst)
+for i in iterL:
+    print(i)
