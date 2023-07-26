@@ -19,5 +19,4 @@ class BankAccount:
 account1 = BankAccount( 100, "전우치", 15000 )
 account1.deposit(5000)
 account1.withdraw(3000)
-
 print(account1)
